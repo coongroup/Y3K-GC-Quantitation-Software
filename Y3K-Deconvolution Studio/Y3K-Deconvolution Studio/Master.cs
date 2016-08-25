@@ -216,13 +216,13 @@ namespace Y3K_Deconvolution_Studio
             while (reader.Read())
             {
                 var groupID = int.Parse(reader["GroupID"].ToString());
-                //var isValid = bool.Parse(reader["IsValid"].ToString());
-                var isValid = false;
-                var isValidString = reader["IsValid"].ToString();
-                if (isValidString.Equals("1"))
-                {
-                    isValid = true;
-                }
+                var isValid = bool.Parse(reader["IsValid"].ToString());
+                //var isValid = false;
+                //var isValidString = reader["IsValid"].ToString();
+                //if (isValidString.Equals("1"))
+                //{
+                //    isValid = true;
+                //}
 
                 var numPeaks = int.Parse(reader["NumPeaks"].ToString());
                 var apexRT = double.Parse(reader["ApexRT"].ToString());

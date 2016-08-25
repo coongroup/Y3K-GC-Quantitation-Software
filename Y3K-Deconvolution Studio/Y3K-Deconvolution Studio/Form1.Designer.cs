@@ -367,6 +367,7 @@
             this.createMasterButton.TabIndex = 7;
             this.createMasterButton.Text = "Create GC Master Files";
             this.createMasterButton.UseVisualStyleBackColor = true;
+            this.createMasterButton.Click += new System.EventHandler(this.createMasterButton_Click);
             // 
             // createBackgroundTextBox
             // 
@@ -534,6 +535,7 @@
             this.zedGraphControl2.ScrollMinY2 = 0D;
             this.zedGraphControl2.Size = new System.Drawing.Size(432, 562);
             this.zedGraphControl2.TabIndex = 0;
+            this.zedGraphControl2.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.zedGraphControl2_MouseDoubleClick);
             // 
             // zedGraphControl3
             // 
@@ -784,6 +786,7 @@
             this.alignmentGridView.Size = new System.Drawing.Size(177, 419);
             this.alignmentGridView.TabIndex = 7;
             this.alignmentGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.alignmentGridView_CellContentClick);
+            this.alignmentGridView.SelectionChanged += new System.EventHandler(this.alignmentGridView_SelectionChanged);
             // 
             // featGroup
             // 
